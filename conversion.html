@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convierte tu dinero</title>
+    <script src="conversion.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form name="formulario" method="post" autocomplete="off" class="formulario">
+    <h1>Conversora</h1>
+    <p>Cantidad a convertir:</p>
+    <input class="cjt" type="number" id="p" value=""  placeholder="Ingresa el valor" onblur="captura1()">
+    <p>Agrega el valor del dolar:</p>
+    <input class="cjt" type="number" id="d" value=""  placeholder="Ingresa el valor del dolar" onblur="captura2()" >
+    <p>Convierte pesos o dolares</p>
+    <input class="B" type="button" value="Pesos" onclick="a_dolares()">
+    <input class="B" type="button" value="Dolares" onclick="a_pesos()">
+    <input class="B" type="reset" value="Borar datos" onclick="borrar()">
+    <ul id='rst'></ul>
+    </form>
+
+</body>
+</html>
